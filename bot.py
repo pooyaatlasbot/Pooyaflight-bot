@@ -5,7 +5,7 @@ from telegram.ext import (
     filters,
 )
 
-from config import TOKEN
+
 from handlers import start, menu
 from database import init_db
 
