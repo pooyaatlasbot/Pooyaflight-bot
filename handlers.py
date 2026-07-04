@@ -5,7 +5,17 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "🛩 به ربات رسمی آموزشگاه خلبانی پویا فلایت خوش آمدید."
     )
+keyboard = [
+    ["✈️ دوره‌های آموزشی"],
+    ["💰 شهریه", "📝 ثبت‌نام"],
+    ["📍 آدرس", "📞 تماس"],
+    ["🌐 وبسایت"],
+]
 
+reply_markup = ReplyKeyboardMarkup(
+    keyboard,
+    resize_keyboard=True
+)
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
 
