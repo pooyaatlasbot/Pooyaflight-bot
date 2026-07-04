@@ -18,16 +18,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "به آموزشگاه خلبانی پویا فلایت خوش آمدید.",
         reply_markup=reply_markup
     )
-keyboard = [
-    ["✈️ دوره‌های آموزشی"],
-    ["💰 شهریه", "📝 ثبت‌نام"],
-    ["📍 آدرس", "📞 تماس"],
-    ["🌐 وبسایت"],
-]
 
-
-async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    text = update.message.text
 
     if text == "🛩 دوره‌های آموزشی":
         await update.message.reply_text(
