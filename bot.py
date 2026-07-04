@@ -7,11 +7,7 @@ from database import init_db
 
 
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        "🛩️ به ربات رسمی آموزشگاه خلبانی پویا فلایت خوش آمدید.",
-        reply_markup=reply_markup
-    )
+
 
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
