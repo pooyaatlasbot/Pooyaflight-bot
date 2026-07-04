@@ -1,10 +1,4 @@
-from telegram import ReplyKeyboardMarkup, Update
-from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
-import os
-from config import ADMIN_ID
-from keyboards import main_keyboard
-from database import init_db
-from handlers import start, menu
+
 TOKEN = os.getenv("BOT_TOKEN")
 
 
