@@ -1,4 +1,23 @@
+from telegram import Update, ReplyKeyboardMarkup
+from telegram.ext import ContextTypes
 
+keyboard = [
+    ["✈️ دوره‌های آموزشی"],
+    ["💰 شهریه", "📝 ثبت‌نام"],
+    ["📍 آدرس", "📞 تماس"],
+    ["🌐 وبسایت"]
+]
+
+reply_markup = ReplyKeyboardMarkup(
+    keyboard,
+    resize_keyboard=True
+)
+
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        "به آموزشگاه خلبانی پویا فلایت خوش آمدید.",
+        reply_markup=reply_markup
+    )
 keyboard = [
     ["✈️ دوره‌های آموزشی"],
     ["💰 شهریه", "📝 ثبت‌نام"],
