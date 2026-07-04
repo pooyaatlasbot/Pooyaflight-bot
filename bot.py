@@ -7,15 +7,7 @@ from database import init_db
 from handlers import start, menu
 TOKEN = os.getenv("BOT_TOKEN")
 
-keyboard = [
-    ["✈️ دوره‌های آموزشی", "🌐 وب‌سایت"],
-    ["📞 تماس با ما", "📍 آدرس"],
-]
 
-reply_markup = ReplyKeyboardMarkup(
-    keyboard,
-    resize_keyboard=True
-)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
