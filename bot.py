@@ -9,7 +9,7 @@ from database import init_db
 
 
 
-async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
     text = update.message.text
 
     if text == "✈️ دوره‌های آموزشی":
