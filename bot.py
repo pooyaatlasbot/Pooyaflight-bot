@@ -6,7 +6,7 @@ from telegram.ext import (
 )
 import os
 
-TOKEN = os.getenv("Bot-token")
+
 
 from handlers import start, menu
 from database import init_db
