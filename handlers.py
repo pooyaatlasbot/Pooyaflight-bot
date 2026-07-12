@@ -84,6 +84,7 @@ elif text == "💰 شهریه دوره‌ها":
     elif text == "📞 تماس با ما":
         await update.message.reply_text(
             "02634490401"
+            "09124905605"
         )
 
     elif text == "🌐 وب‌سایت":
